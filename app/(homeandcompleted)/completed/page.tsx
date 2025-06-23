@@ -48,9 +48,10 @@ export default function CompletedTaskPage() {
         </div>
       ) : (
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-xl text-green-500 font-bold mt-40">
-            No completed tasks available!
-          </h1>
+          <div className="w-20 h-20 bg-blue-600 rounded-full"></div>
+
+          {/* Ping Animation */}
+          <div className="absolute inset-0 w-20 h-20 rounded-full bg-blue-600 opacity-75 animate-ping"></div>
         </div>
       )}
     </>

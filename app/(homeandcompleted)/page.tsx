@@ -47,10 +47,7 @@ export default function Home() {
         </div>
       ) : (
         <div className="flex flex-col justify-center items-center">
-          <div className="w-20 h-20 bg-blue-600 rounded-full"></div>
-
-          {/* Ping Animation */}
-          <div className="absolute inset-0 w-20 h-20 rounded-full bg-green-600 opacity-75 animate-ping"></div>
+          <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
         </div>
       )}
     </>

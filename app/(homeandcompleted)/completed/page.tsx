@@ -35,7 +35,7 @@ export default function CompletedTaskPage() {
   return (
     <>
       {data && data.length > 0 ? (
-        <div className="grid justify-center items-center grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-4 px-6">
+        <div className="grid justify-center items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8 mt-4 px-6">
           {data?.map((item: any) => (
             <CompletedComp
               value={item.id}

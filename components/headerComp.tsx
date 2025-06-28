@@ -203,6 +203,22 @@ export default function Header() {
             >
               {userName ? "Sign Out" : "Sign In"}
             </Link>
+            <span className="hidden md:flex items-center ml-auto text-gray-600 font-medium text-md w-[140px] truncate">
+              <svg
+                className="w-6 h-6 text-gray-500 mr-1"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M5.121 17.804A6 6 0 0112 15a6 6 0 016.879 2.804M15 11a3 3 0 10-6 0 3 3 0 006 0z"
+                />
+              </svg>
+              Hi, {userName}
+            </span>
           </div>
         )}
       </header>

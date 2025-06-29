@@ -203,7 +203,11 @@ export default function Header() {
             >
               {userName ? "Sign Out" : "Sign In"}
             </Link>
-            <Link href="/">
+            <Link
+              href="/"
+              className="flex items-center py-2 w-full text-center text-gray-600 font-medium text-md truncate"
+              onClick={() => setMenuOpen(false)}
+            >
               <span className="flex items-center ml-auto text-gray-600 font-medium text-md w-[140px] truncate">
                 <svg
                   className="w-6 h-6 text-gray-500 mr-1"

@@ -181,7 +181,7 @@ export default function Header() {
 
         {/* Mobile dropdown menu */}
         {menuOpen && (
-          <div className="absolute top-full right-0 left-0 bg-white border-t shadow-md flex flex-col items-center justify-center px-6 py-4 md:hidden">
+          <div className="absolute top-full right-0 left-0 bg-white border-t border-b shadow-md flex flex-col items-center justify-center px-6 py-4 md:hidden">
             <Link
               href="/"
               className="py-2 w-full text-center"
@@ -205,20 +205,20 @@ export default function Header() {
             </Link>
             <Link
               href="/"
-              className="w-full text-center text-gray-600"
+              className="w-full text-cente"
               onClick={() => setMenuOpen(false)}
             >
-              <span>
+              <span className="flex items-center justify-center w-full">
                 <svg
-                  className="w-6 h-6 text-gray-500"
+                  className="w-6 h-6 inline-block mr-1"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="2"
                   viewBox="0 0 24 24"
                 >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M5.121 17.804A6 6 0 0112 15a6 6 0 016.879 2.804M15 11a3 3 0 10-6 0 3 3 0 006 0z"
                   />
                 </svg>

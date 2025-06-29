@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Header from "../../components/headerComp";
+import FooterComp from "../../components/FooterComp";
 import "../globals.css";
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export default function SignInLayout({
         <>
           <Header />
           {children}
+          <FooterComp />
         </>
       </body>
     </html>

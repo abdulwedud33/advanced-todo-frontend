@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../globals.css";
 import Link from "next/link";
 import Header from "../../components/headerComp";
+import FooterComp from "../../components/FooterComp";
 
 export const metadata: Metadata = {
   title: "Advanced-To-Do-App",
@@ -19,6 +20,7 @@ export default function HomeAndCompletedLayout({
         <>
           <Header />
           {children}
+          <FooterComp />
         </>
       </body>
     </html>

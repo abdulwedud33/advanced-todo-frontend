@@ -205,10 +205,10 @@ export default function Header() {
             </Link>
             <Link
               href="/"
-              className="flex items-center py-2 w-full text-center text-gray-600 font-medium text-md truncate"
+              className="py-2 w-full text-center text-gray-600"
               onClick={() => setMenuOpen(false)}
             >
-              <span className="flex items-center text-gray-600 font-medium **:truncate">
+              <span>
                 <svg
                   className="w-6 h-6 text-gray-500 mr-1"
                   fill="none"

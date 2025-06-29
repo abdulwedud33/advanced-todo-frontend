@@ -203,8 +203,8 @@ export default function Header() {
             >
               {userName ? "Sign Out" : "Sign In"}
             </Link>
-            <div>
-              <span className="hidden md:flex items-center ml-auto text-gray-600 font-medium text-md w-[140px] truncate">
+            <Link href="/">
+              <span className="flex items-center ml-auto text-gray-600 font-medium text-md w-[140px] truncate">
                 <svg
                   className="w-6 h-6 text-gray-500 mr-1"
                   fill="none"
@@ -220,7 +220,7 @@ export default function Header() {
                 </svg>
                 Hi, {userName}
               </span>
-            </div>
+            </Link>
           </div>
         )}
       </header>
